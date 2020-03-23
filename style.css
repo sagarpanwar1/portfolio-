@@ -1,0 +1,213 @@
+.navbar-trans {
+  opacity: 0; }
+
+
+.navbar {
+    transition: all 0.4s;
+    
+}
+
+.navbar .nav-link {
+    color: #fff;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar .navbar-brand {
+    color: #fff;
+}
+
+
+/* Change navbar styling on scroll */
+.navbar.active {
+    background: #fff;
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar.active .nav-link {
+    color: #555;
+}
+
+.navbar.active .nav-link:hover,
+.navbar.active .nav-link:focus {
+    color: #555;
+    text-decoration: none;
+}
+
+.navbar.active .navbar-brand {
+    color: #555;
+}
+
+.text-small {
+    font-size: 0.9rem !important;
+}
+
+
+body {
+     /* min-height: 110vh;  */
+    height: 100vh;  
+  
+}   
+
+/*------------------------------------*/
+  .content{
+	width: 100%;
+  height: 700px;
+	/*border:10px solid skyblue;*/
+	background-image: url(ocean.jpg);
+	background-size: cover;
+		text-align: center;
+		/*border:1px solid grey;*/
+		position: relative;
+}
+
+.content h1{
+	font-family:"Countryside";
+		 font-size:4rem;
+		 color: white;
+
+		}
+
+		@font-face{
+  font-family:"Countryside";
+  src: url("font1/Countryside.ttf");
+}
+.content .inside{
+	position: absolute;
+	transform: translate(-50%.-50%);
+	top: 50%;
+	left: 35%;
+}
+
+/*----------------------------------*/
+#features{
+  background-color:#f2f2f2;
+  padding:2%;
+  width: 100%;
+}
+.features-box1{
+padding: 2% 2% 2%;
+margin: 5% 0% 0% 20%;
+text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+width:500px;
+height:400px;
+background-color:yellowgreen;
+line-break:normal;
+}
+
+.features-box2{
+padding: 2% 2% 2%;
+margin: 7% 20% 0% 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+text-align: center;
+height: 500px;
+width:800px;
+background-color:yellow;
+}
+
+.features-box3{
+padding: 2% 2% 2%;
+margin: 5% 0% 0% 20%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+text-align: center;
+height:230px;
+width:500px;
+background-color:seagreen;
+}
+ 
+/*-------------skills---------------------*/
+#skills{
+background-color:#f2f2f2;
+}
+.container{
+  width:70%;
+  margin: 0 40% 0 0;
+  background-color:;
+  height: 300px;
+}
+@keyframes load{
+  from {
+    width: 0%
+  }
+}
+@-webkit-keyframes load{
+  from {
+    width: 0%
+  }
+}
+@-moz-keyframes load{
+  from {
+    width: 0%
+  }
+}
+@-o-keyframes load{
+  from {
+    width: 0%
+  }
+}
+
+.bar{
+  background-color: #EEE;
+  padding: 2px;
+  border-radius: 15px;
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #FFF;
+  font-weight:bold;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+}
+.bar::before{
+  content:  attr(data-skill);
+  background-color: #a6cfe3;
+  display: inline-block;
+  padding: 5px 0 5px 10px;
+  border-radius: inherit;
+  animation: load 2s 0s;
+  -webkit-animation: load 2s 0s;
+  -moz-animation: load 2s 0s;
+  -o-animation: load 2s 0s;
+}
+
+.bar.front::before{
+  background-color: #a6cfe3;
+}
+.bar.back::before{
+  background-color: #a6cfe3;
+}
+
+.bar.learning::before{
+  width: calc(70% - 10px);
+}
+.bar.basic::before{
+  width: calc(50% - 10px);
+}
+.bar.intermediate::before{
+  width: calc(60% - 10px);
+}
+.bar.advanced::before{
+  width: calc(65% - 10px);
+}
+.bar.expert::before{
+  width: calc(90% - 10px);
+}
+/*---------------works-------------------*/
+.works{
+	height:800px;
+	background-color: #f2f2f2;
+}
+
+
